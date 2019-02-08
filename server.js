@@ -51,6 +51,14 @@ app.get('/about', (req, res) => {
     //currentYear: new Date().getFullYear()
   });
 });
+app.get('/contact', (req,res) => {
+  res.render('contact.hbs', {
+    name: 'Hrvoje',
+    number: 0123456,
+    address: 'rac 123',
+    pageTitle: 'Contact page'
+  });
+});
 
 app.listen(port, () => {
   console.log(`Server is up on ${port}`);
