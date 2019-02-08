@@ -13,6 +13,9 @@ hbs.registerHelper('dateTimeTest', () => {
 hbs.registerHelper('textMan', (text) => {
   return text.toUpperCase();
 });
+hbs.registerHelper('dateT', (text) => {
+  return text.toUpperCase();
+});
 
 
 app.use((req, res , next) => {
@@ -56,7 +59,8 @@ app.get('/contact', (req,res) => {
     name: 'Hrvoje',
     number: 0123456,
     address: 'rac 123',
-    pageTitle: 'Contact page'
+    pageTitle: 'Contact page',
+    testniData: 'ISTOK 25, Zapad 30'
   });
 });
 
